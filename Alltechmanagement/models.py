@@ -7,3 +7,12 @@ class Shop_stock(models.Model):
     price = models.DecimalField(decimal_places=2,max_digits=7)
     def __str__(self):
         return self.product_name
+
+
+class Home_stock(models.Model):
+    product_name = models.CharField(max_length=30, unique=True)
+    quantity = models.IntegerField()
+    def __str__(self):
+        return self.product_name
+
+

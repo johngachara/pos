@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4wau9k9hqookos9*qzx5fuee!f64#8f$4c!nqopb7!o@4_qhp$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -143,3 +143,36 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert alert-danger alert-dismissible fade show',
 }
 LOGIN_URL = 'signin'
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime}  {process:d}  {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'newfile': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': './loggers.log',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        '': {
+            'level': 'DEBUG',
+            'handlers': ['newfile'],
+            'propagate': True,
+        },
+    },
+}
+MPESA_API = {
+    "CALLBACK_URL": "https://1376-197-237-150-99.ngrok-free.app/callback",
+    "CONSUMER_KEY": "76tpV9s60yFalNFHM8qLj2SohZfA4pSm",
+    "CONSUMER_SECRET": "27joa4G4j7EiJ6K8",
+    "CREDENTIALS_URL": "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials",
+    "PAYMENT_URL": "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest",
+    "PASS_KEY": "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
+}

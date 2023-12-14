@@ -15,13 +15,12 @@
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{{ Product.product_name }}</h1>
         <p class="lead">Quantity: {{ Product.quantity }}</p>
-          <p class="lead">Price: {{ Product.price }}</p>
+          <p class="lead">Selling Price: {{ Product.selling_price }}</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="{% url 'complete' Product.id %}" type="button" class="btn btn-outline-secondary btn-lg px-4">Complete</a>
             {% if user.is_superuser %}
-          <a href="{% url 'update' Product.id %}" type="button" class="btn btn-outline-secondary btn-lg px-4">Update</a>
-             <a href="{% url 'delete' Product.id %}" type="button" class="btn btn-outline-secondary btn-lg px-4">Delete</a>
+             <a href="{% url 'delete_saved' Product.id %}" type="button" class="btn btn-outline-secondary btn-lg px-4">Delete</a>
             {% endif %}
-          <a href="{% url 'sell' Product.id %}" type="button" class="btn btn-outline-secondary btn-lg px-4">Sell</a>
         </div>
       </div>
     </div>

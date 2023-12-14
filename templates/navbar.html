@@ -20,19 +20,26 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'add_stock' %}">Add Stock</a>
         </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'transactions' %}">Saved</a>
+        </li>
           {% if user.is_superuser %}
             <li class="nav-item">
           <a class="nav-link" href="{% url 'home_stock' %}">Home Stock</a>
         </li>
-          {% endif %}
-            <li class="nav-item">
-          <a class="nav-link" href="{% url 'add_stock' %}">LIPA NA MPESA</a>
+              <li class="nav-item">
+          <a class="nav-link" href="{% url 'initiate' %}">LIPA NA MPESA</a>
         </li>
+              <li class="nav-item">
+          <a class="nav-link" href="{% url 'view_complete' %}">Sales</a>
+        </li>
+          {% endif %}
             <li class="nav-item">
           <a class="nav-link" href="{% url 'signout' %}">Sign Out</a>
         </li>
       </ul>
       <form class="d-flex" action="{% url 'search' %}">
+          {% csrf_token %}
         <input class="form-control me-2" type="search" placeholder="Search"name="Searching" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

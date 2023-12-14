@@ -18,3 +18,12 @@ class home_form(forms.ModelForm):
     class Meta:
         model = Home_stock
         fields = '__all__'
+
+class PaymentForm(forms.Form):
+    product_name = forms.CharField(max_length=255)
+    price = forms.DecimalField()
+    quantity = forms.IntegerField()
+
+
+class CompleteForm(PaymentForm):
+    pass

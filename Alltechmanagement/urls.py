@@ -16,5 +16,13 @@ urlpatterns = [
     path('updatehome/<int:product_id>',views.update_home_stock,name='update_home'),
     path('deletehome/<int:product_id>',views.delete_home_stock,name='delete_home'),
     path('dispatchpage/<int:product_id>',views.dispatch_page,name='dispatch_page'),
-    path('dispatch/<int:product_id>',views.dispatch,name='dispatch')
+    path('dispatch/<int:product_id>',views.dispatch,name='dispatch'),
+    path('mpesa', views.initiate_payment, name="initiate"),
+    path('callback', views.callback, name="callback"),
+    path('sell/<int:product_id>',views.selling_page,name='sell'),
+    path('transactions',views.saved_transactions,name='transactions'),
+    path('view_transactions/<int:transaction_id>',views.view_saved_transaction,name='view_transaction'),
+    path('complete/<int:transaction_id>',views.complete_transaction,name='complete'),
+    path('view_complete',views.view_completed_transactions,name='view_complete'),
+    path('delete_saved/<int:transaction_id>',views.delete_saved_transactions,name='delete_saved')
 ]

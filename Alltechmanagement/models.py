@@ -16,3 +16,17 @@ class Home_stock(models.Model):
         return self.product_name
 
 
+class Saved_transactions(models.Model):
+    product_name = models.CharField(max_length=20)
+    selling_price = models.DecimalField(max_digits=7,decimal_places=2)
+    quantity = models.IntegerField()
+    def __str__(self):
+        return self.product_name
+
+class Completed_transactions(models.Model):
+    product_name = models.CharField(max_length=20)
+    selling_price = models.DecimalField(max_digits=7, decimal_places=2)
+    quantity = models.IntegerField()
+
+    def __str__(self):
+        return self.product_name

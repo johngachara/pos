@@ -1,0 +1,1035 @@
+INFO 2023-12-12 16:24:55,148  17436  Watching for file changes with StatReloader
+WARNING 2023-12-12 16:24:57,291  17436  Not Found: /favicon.ico
+INFO 2023-12-12 16:25:53,070  17436  254712240197 1 484458
+ERROR 2023-12-12 16:25:53,120  17436  Internal Server Error: /mpesa
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 177, in initiate_payment
+    "Password": mpesa.generate_password(),
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/mpesa.py", line 27, in generate_password
+    biz_short_code = get_business_shortcode()
+NameError: name 'get_business_shortcode' is not defined
+INFO 2023-12-12 16:29:00,615  17436  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-12 16:29:00,814  17650  Watching for file changes with StatReloader
+INFO 2023-12-12 16:29:36,386  17650  254712240197 1 484458
+DEBUG 2023-12-12 16:29:36,392  17650  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:29:37,526  17650  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-12 16:29:37,531  17650  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:29:38,942  17650  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 400 None
+DEBUG 2023-12-12 16:29:38,944  17650  {'requestId': '118900-124425898-1', 'errorCode': '400.002.02', 'errorMessage': 'Bad Request - Invalid CallBackURL'}
+ERROR 2023-12-12 16:29:38,944  17650  Error with error code 400.002.02
+WARNING 2023-12-12 16:31:25,447  17650  Not Found: /favicon.ico
+WARNING 2023-12-12 16:31:38,227  17650  Forbidden (Origin checking failed - https://35c8-41-209-57-167.ngrok-free.app does not match any trusted origins.): /signin
+INFO 2023-12-12 16:32:15,009  17650  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-12 16:32:15,207  17872  Watching for file changes with StatReloader
+WARNING 2023-12-12 16:32:21,375  17872  Forbidden (Origin checking failed - https://35c8-41-209-57-167.ngrok-free.app does not match any trusted origins.): /signin
+INFO 2023-12-12 16:33:02,067  17922  Watching for file changes with StatReloader
+INFO 2023-12-12 16:33:46,606  17922  /home/gachara/PycharmProjects/djangoProject15/djangoProject15/settings.py changed, reloading.
+INFO 2023-12-12 16:33:46,809  18073  Watching for file changes with StatReloader
+WARNING 2023-12-12 16:33:58,423  18073  Not Found: /favicon.ico
+WARNING 2023-12-12 16:34:05,576  18073  Forbidden (Origin checking failed - https://30f8-41-209-57-167.ngrok-free.app does not match any trusted origins.): /signin
+INFO 2023-12-12 16:36:04,282  18073  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-12 16:36:04,529  18244  Watching for file changes with StatReloader
+INFO 2023-12-12 16:37:09,716  18244  254712240197 1 484458
+DEBUG 2023-12-12 16:37:09,718  18244  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:37:10,660  18244  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-12 16:37:10,670  18244  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:37:11,781  18244  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 400 None
+DEBUG 2023-12-12 16:37:11,784  18244  {'requestId': '25416-93415334-1', 'errorCode': '400.002.02', 'errorMessage': 'Bad Request - Invalid CallBackURL'}
+ERROR 2023-12-12 16:37:11,784  18244  Error with error code 400.002.02
+WARNING 2023-12-12 16:42:05,490  18244  Not Found: /favicon.ico
+INFO 2023-12-12 16:43:44,399  18244  /home/gachara/PycharmProjects/djangoProject15/djangoProject15/settings.py changed, reloading.
+INFO 2023-12-12 16:43:44,667  19137  Watching for file changes with StatReloader
+INFO 2023-12-12 16:44:03,535  19137  254712240197 1 484458
+DEBUG 2023-12-12 16:44:03,538  19137  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:44:04,459  19137  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-12 16:44:04,467  19137  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:44:06,127  19137  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 500 None
+DEBUG 2023-12-12 16:44:06,129  19137  {'requestId': '118892-124454814-1', 'errorCode': '500.001.1001', 'errorMessage': 'Merchant does not exist'}
+ERROR 2023-12-12 16:44:06,129  19137  Error with error code 500.001.1001
+INFO 2023-12-12 16:47:34,504  19137  254712240197 1 174379
+DEBUG 2023-12-12 16:47:34,506  19137  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:47:35,915  19137  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-12 16:47:35,922  19137  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:47:37,657  19137  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-12 16:47:37,659  19137  {'MerchantRequestID': '121524-189834639-1', 'CheckoutRequestID': 'ws_CO_12122023195053114712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-12 16:47:37,660  19137  121524-189834639-1 ws_CO_12122023195053114712240197
+INFO 2023-12-12 16:47:58,745  19137  254712240197 1 174379
+DEBUG 2023-12-12 16:47:58,748  19137  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:47:59,354  19137  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-12 16:47:59,361  19137  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-12 16:48:01,189  19137  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-12 16:48:01,191  19137  {'MerchantRequestID': '98181-60344931-1', 'CheckoutRequestID': 'ws_CO_12122023195228007712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-12 16:48:01,191  19137  98181-60344931-1 ws_CO_12122023195228007712240197
+INFO 2023-12-13 02:01:17,236  6952  Watching for file changes with StatReloader
+WARNING 2023-12-13 02:01:19,921  6952  Not Found: /favicon.ico
+INFO 2023-12-13 02:04:59,034  7324  Watching for file changes with StatReloader
+INFO 2023-12-13 02:05:04,293  7324  254712240197 1 174379
+DEBUG 2023-12-13 02:05:04,297  7324  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:05:05,623  7324  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:05:05,632  7324  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:05:07,773  7324  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 400 None
+DEBUG 2023-12-13 02:05:07,776  7324  {'requestId': '25429-94032802-1', 'errorCode': '400.002.02', 'errorMessage': 'Bad Request - Invalid CallBackURL'}
+ERROR 2023-12-13 02:05:07,776  7324  Error with error code 400.002.02
+INFO 2023-12-13 02:06:41,272  7324  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:06:41,584  7380  Watching for file changes with StatReloader
+WARNING 2023-12-13 02:06:48,659  7380  Not Found: /favicon.ico
+INFO 2023-12-13 02:07:06,629  7380  254712240197 1 174379
+DEBUG 2023-12-13 02:07:06,632  7380  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:07:07,894  7380  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:07:07,904  7380  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:07:09,713  7380  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 400 None
+DEBUG 2023-12-13 02:07:09,716  7380  {'requestId': '17151-87877161-1', 'errorCode': '400.002.02', 'errorMessage': 'Bad Request - Invalid CallBackURL'}
+ERROR 2023-12-13 02:07:09,716  7380  Error with error code 400.002.02
+INFO 2023-12-13 02:08:26,964  7380  /home/gachara/PycharmProjects/djangoProject15/djangoProject15/settings.py changed, reloading.
+INFO 2023-12-13 02:08:27,315  7503  Watching for file changes with StatReloader
+INFO 2023-12-13 02:08:31,708  7503  254712240197 1 174379
+DEBUG 2023-12-13 02:08:31,713  7503  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:08:32,783  7503  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:08:32,791  7503  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:08:33,838  7503  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:08:33,840  7503  {'MerchantRequestID': '118895-125063741-2', 'CheckoutRequestID': 'ws_CO_13122023051150449712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-13 02:08:33,840  7503  118895-125063741-2 ws_CO_13122023051150449712240197
+INFO 2023-12-13 02:09:54,800  7503  254712240197 1 174379
+DEBUG 2023-12-13 02:09:54,803  7503  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:09:55,984  7503  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:09:55,990  7503  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:09:57,372  7503  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:09:57,374  7503  {'MerchantRequestID': '3975-89969089-1', 'CheckoutRequestID': 'ws_CO_13122023051313789712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-13 02:09:57,374  7503  3975-89969089-1 ws_CO_13122023051313789712240197
+INFO 2023-12-13 02:11:35,502  7503  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:11:35,814  7608  Watching for file changes with StatReloader
+INFO 2023-12-13 02:11:39,805  7608  254712240197 1 174379
+DEBUG 2023-12-13 02:11:39,811  7608  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:11:40,999  7608  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:11:41,006  7608  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:11:42,433  7608  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:11:42,436  7608  {'MerchantRequestID': '17149-87879815-1', 'CheckoutRequestID': 'ws_CO_13122023051610181712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-13 02:11:42,436  7608  17149-87879815-1 ws_CO_13122023051610181712240197
+INFO 2023-12-13 02:18:22,794  7608  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:18:23,137  7771  Watching for file changes with StatReloader
+INFO 2023-12-13 02:18:29,891  7771  254712240197 1 174379
+DEBUG 2023-12-13 02:18:29,893  7771  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:18:31,124  7771  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:18:31,131  7771  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:18:32,662  7771  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:18:32,664  7771  {'MerchantRequestID': '17126-87883644-1', 'CheckoutRequestID': 'ws_CO_13122023052300532712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-13 02:18:32,665  7771  17126-87883644-1 ws_CO_13122023052300532712240197
+INFO 2023-12-13 02:19:33,988  7771  254712240197 1 174379
+DEBUG 2023-12-13 02:19:33,992  7771  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:19:35,237  7771  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:19:35,244  7771  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 02:19:36,663  7771  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-13 02:19:36,665  7771  {'MerchantRequestID': '3960-89974896-1', 'CheckoutRequestID': 'ws_CO_13122023052253210712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-13 02:19:36,666  7771  3960-89974896-1 ws_CO_13122023052253210712240197
+INFO 2023-12-13 02:22:32,798  7771  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 02:22:33,103  7905  Watching for file changes with StatReloader
+INFO 2023-12-13 02:37:10,818  7905  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/forms.py changed, reloading.
+INFO 2023-12-13 02:37:11,150  8196  Watching for file changes with StatReloader
+ERROR 2023-12-13 02:38:28,046  8196  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 228, in save_transactions
+    product = Home_stock.objects.get(pk=product_id)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Alltechmanagement.models.Home_stock.DoesNotExist: Home_stock matching query does not exist.
+INFO 2023-12-13 02:38:51,363  8196  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:38:51,707  8334  Watching for file changes with StatReloader
+INFO 2023-12-13 02:41:49,503  8334  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:41:49,832  8438  Watching for file changes with StatReloader
+ERROR 2023-12-13 02:41:52,523  8438  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 233, in save_transactions
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+INFO 2023-12-13 02:42:19,057  8473  Watching for file changes with StatReloader
+ERROR 2023-12-13 02:42:26,180  8473  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (1, , null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 233, in save_transactions
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (1, , null, null).
+
+ERROR 2023-12-13 02:43:58,368  8473  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (2, , null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 233, in save_transactions
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (2, , null, null).
+
+ERROR 2023-12-13 02:43:59,223  8473  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (3, , null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 233, in save_transactions
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (3, , null, null).
+
+ERROR 2023-12-13 02:44:23,833  8473  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (4, , null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 233, in save_transactions
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (4, , null, null).
+
+INFO 2023-12-13 02:45:00,828  8473  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:45:01,148  8653  Watching for file changes with StatReloader
+INFO 2023-12-13 02:46:02,969  8653  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:46:03,278  8672  Watching for file changes with StatReloader
+INFO 2023-12-13 02:46:28,864  8672  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:46:29,167  8745  Watching for file changes with StatReloader
+ERROR 2023-12-13 02:46:31,100  8745  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (5, , null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 236, in save_transactions
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (5, , null, null).
+
+ERROR 2023-12-13 02:46:38,934  8745  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (6, , null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 236, in save_transactions
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: null value in column "selling_price" of relation "Alltechmanagement_saved_transactions" violates not-null constraint
+DETAIL:  Failing row contains (6, , null, null).
+
+INFO 2023-12-13 02:49:06,938  8745  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:49:07,286  8841  Watching for file changes with StatReloader
+INFO 2023-12-13 02:52:38,351  8841  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 02:52:38,764  8911  Watching for file changes with StatReloader
+INFO 2023-12-13 02:53:05,063  8911  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 02:53:05,373  8948  Watching for file changes with StatReloader
+INFO 2023-12-13 03:19:00,112  9337  Watching for file changes with StatReloader
+INFO 2023-12-13 03:19:17,353  9337  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/urls.py changed, reloading.
+INFO 2023-12-13 03:19:17,661  9349  Watching for file changes with StatReloader
+WARNING 2023-12-13 03:19:21,369  9349  Not Found: /sell/13
+ERROR 2023-12-13 03:19:36,852  9349  Internal Server Error: /product/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 90, in view_product
+    return render(request,'product.html',{"Product":product})
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'save' not found. 'save' is not a valid view function or pattern name.
+INFO 2023-12-13 03:20:59,335  9349  254712240197 1 174379
+DEBUG 2023-12-13 03:20:59,339  9349  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 03:21:00,595  9349  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 03:21:00,602  9349  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 03:21:02,029  9349  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-13 03:21:02,032  9349  {'MerchantRequestID': '118906-125109547-1', 'CheckoutRequestID': 'ws_CO_13122023062418634712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-13 03:21:02,032  9349  118906-125109547-1 ws_CO_13122023062418634712240197
+INFO 2023-12-13 03:35:59,130  9803  Watching for file changes with StatReloader
+INFO 2023-12-13 03:36:12,012  9803  254712240197 1 174379
+DEBUG 2023-12-13 03:36:12,015  9803  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 03:36:13,227  9803  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-13 03:36:13,235  9803  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-13 03:36:14,867  9803  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-13 03:36:14,869  9803  {'MerchantRequestID': '1206-118532324-1', 'CheckoutRequestID': 'ws_CO_13122023063931401712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-13 03:36:14,870  9803  1206-118532324-1 ws_CO_13122023063931401712240197
+INFO 2023-12-13 03:52:08,717  12547  Watching for file changes with StatReloader
+INFO 2023-12-13 04:08:35,768  12547  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 04:08:36,091  14260  Watching for file changes with StatReloader
+INFO 2023-12-13 04:08:41,878  14274  Watching for file changes with StatReloader
+INFO 2023-12-13 04:08:48,570  14284  Watching for file changes with StatReloader
+INFO 2023-12-13 04:11:31,304  14284  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/urls.py changed, reloading.
+INFO 2023-12-13 04:11:31,617  14375  Watching for file changes with StatReloader
+WARNING 2023-12-13 04:13:13,176  14375  Forbidden (CSRF token missing.): /sell/13
+INFO 2023-12-13 04:16:33,653  14375  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 04:16:33,984  14605  Watching for file changes with StatReloader
+INFO 2023-12-13 04:18:01,067  14605  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 04:18:01,395  14665  Watching for file changes with StatReloader
+INFO 2023-12-13 04:18:57,185  14665  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 04:18:57,495  14692  Watching for file changes with StatReloader
+ERROR 2023-12-13 04:19:01,388  14692  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 230, in selling_page
+    form.cleaned_data['product_name'] = product.product_name
+AttributeError: 'saved_transactions' object has no attribute 'cleaned_data'
+INFO 2023-12-13 04:19:12,878  14692  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 04:19:13,188  14721  Watching for file changes with StatReloader
+INFO 2023-12-13 07:00:13,697  16970  Watching for file changes with StatReloader
+INFO 2023-12-13 07:08:06,108  16970  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:08:06,421  17116  Watching for file changes with StatReloader
+INFO 2023-12-13 07:08:56,145  17116  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:08:56,504  17232  Watching for file changes with StatReloader
+ERROR 2023-12-13 07:08:58,919  17232  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 231, in selling_page
+    form.save()
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/forms/models.py", line 533, in save
+    raise ValueError(
+ValueError: The Saved_transactions could not be created because the data didn't validate.
+INFO 2023-12-13 07:09:37,095  17232  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:09:37,415  17294  Watching for file changes with StatReloader
+INFO 2023-12-13 07:13:52,976  17294  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 07:13:53,300  17448  Watching for file changes with StatReloader
+INFO 2023-12-13 07:14:20,558  17448  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 07:14:20,895  17469  Watching for file changes with StatReloader
+INFO 2023-12-13 07:17:21,290  17469  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/forms.py changed, reloading.
+INFO 2023-12-13 07:17:21,584  17521  Watching for file changes with StatReloader
+INFO 2023-12-13 07:17:32,748  17521  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/forms.py changed, reloading.
+INFO 2023-12-13 07:17:33,047  17531  Watching for file changes with StatReloader
+INFO 2023-12-13 07:17:51,261  17531  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:17:51,573  17569  Watching for file changes with StatReloader
+INFO 2023-12-13 07:20:15,215  17569  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:20:15,553  17689  Watching for file changes with StatReloader
+INFO 2023-12-13 07:21:21,356  17689  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 07:21:21,714  17729  Watching for file changes with StatReloader
+INFO 2023-12-13 07:22:32,486  17729  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 07:22:32,788  17752  Watching for file changes with StatReloader
+ERROR 2023-12-13 07:22:38,180  17752  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 237, in selling_page
+    Saved_transactions.objects.create(product_name=product_name, price=price, quantity=quantity)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 656, in create
+    obj = self.model(**kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Saved_transactions() got unexpected keyword arguments: 'price'
+INFO 2023-12-13 07:23:12,490  17752  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:23:12,809  17856  Watching for file changes with StatReloader
+ERROR 2023-12-13 07:23:17,004  17856  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 237, in selling_page
+    Saved_transactions.objects.create(product_name=product_name, selling_price=price, quantity=quantity)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+INFO 2023-12-13 07:23:27,356  17876  Watching for file changes with StatReloader
+INFO 2023-12-13 07:24:10,576  17906  Watching for file changes with StatReloader
+ERROR 2023-12-13 07:24:14,644  17906  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 237, in selling_page
+    Saved_transactions.objects.create(product_name=product_name, selling_price=price, quantity=quantity)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+INFO 2023-12-13 07:25:16,825  17939  Watching for file changes with StatReloader
+ERROR 2023-12-13 07:25:22,286  17939  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 237, in selling_page
+    Saved_transactions.objects.create(product_name=product_name, selling_price=price, quantity=quantity)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: INSERT INTO "Alltechmanagement_saved_transactions" ("product...
+                    ^
+
+ERROR 2023-12-13 07:26:12,135  17939  Internal Server Error: /sell/13
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "product_name" of relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: ...SERT INTO "Alltechmanagement_saved_transactions" ("product_n...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 237, in selling_page
+    Saved_transactions.objects.create(product_name=product_name, selling_price=price, quantity=quantity)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "product_name" of relation "Alltechmanagement_saved_transactions" does not exist
+LINE 1: ...SERT INTO "Alltechmanagement_saved_transactions" ("product_n...
+                                                             ^
+
+INFO 2023-12-13 07:28:53,930  18157  Watching for file changes with StatReloader
+INFO 2023-12-13 07:37:48,788  18157  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:37:49,011  18527  Watching for file changes with StatReloader
+INFO 2023-12-13 07:43:54,530  18527  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:43:54,757  18708  Watching for file changes with StatReloader
+INFO 2023-12-13 07:45:42,872  18708  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/urls.py changed, reloading.
+INFO 2023-12-13 07:45:43,102  18763  Watching for file changes with StatReloader
+INFO 2023-12-13 07:56:15,917  18763  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/urls.py changed, reloading.
+INFO 2023-12-13 07:56:16,121  19015  Watching for file changes with StatReloader
+INFO 2023-12-13 07:59:13,026  19015  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 07:59:13,330  19103  Watching for file changes with StatReloader
+INFO 2023-12-13 08:08:01,589  19340  Watching for file changes with StatReloader
+INFO 2023-12-13 08:09:41,736  19340  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/models.py changed, reloading.
+INFO 2023-12-13 08:13:45,508  19731  Watching for file changes with StatReloader
+INFO 2023-12-13 08:14:07,886  19731  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:14:08,114  19815  Watching for file changes with StatReloader
+INFO 2023-12-13 08:14:59,764  19815  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:14:59,989  19848  Watching for file changes with StatReloader
+WARNING 2023-12-13 08:15:13,067  19848  Not Found: /complete/transactions.html
+INFO 2023-12-13 08:15:55,653  19848  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:15:55,849  19878  Watching for file changes with StatReloader
+WARNING 2023-12-13 08:15:58,436  19878  Not Found: /complete/transactions.html
+WARNING 2023-12-13 08:15:59,432  19878  Not Found: /complete/transactions.html
+INFO 2023-12-13 08:16:43,574  19878  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:16:43,766  19967  Watching for file changes with StatReloader
+INFO 2023-12-13 08:17:40,627  19967  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:17:40,823  20003  Watching for file changes with StatReloader
+INFO 2023-12-13 08:25:20,142  20003  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/urls.py changed, reloading.
+INFO 2023-12-13 08:25:20,376  20189  Watching for file changes with StatReloader
+ERROR 2023-12-13 08:25:59,755  20189  Internal Server Error: /complete/7
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 268, in complete_transaction
+    return redirect('view_transaction')
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_transaction' with no arguments not found. 1 pattern(s) tried: ['view_transactions/(?P<transaction_id>[0-9]+)\\Z']
+ERROR 2023-12-13 08:26:13,010  20189  Internal Server Error: /complete/7
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 262, in complete_transaction
+    transaction = Saved_transactions.objects.get(pk=transaction_id)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Alltechmanagement.models.Saved_transactions.DoesNotExist: Saved_transactions matching query does not exist.
+ERROR 2023-12-13 08:26:35,072  20189  Internal Server Error: /complete/8
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 268, in complete_transaction
+    return redirect('view_transaction')
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_transaction' with no arguments not found. 1 pattern(s) tried: ['view_transactions/(?P<transaction_id>[0-9]+)\\Z']
+INFO 2023-12-13 08:27:00,561  20189  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:27:00,798  20245  Watching for file changes with StatReloader
+ERROR 2023-12-13 08:27:03,499  20245  Internal Server Error: /complete/8
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 262, in complete_transaction
+    transaction = Saved_transactions.objects.get(pk=transaction_id)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Alltechmanagement.models.Saved_transactions.DoesNotExist: Saved_transactions matching query does not exist.
+INFO 2023-12-13 08:29:38,571  20245  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:29:38,788  20358  Watching for file changes with StatReloader
+ERROR 2023-12-13 08:29:59,101  20358  Internal Server Error: /view_complete
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 271, in view_completed_transactions
+    transactions = Completed_transactions.objects.f
+AttributeError: 'Manager' object has no attribute 'f'
+INFO 2023-12-13 08:30:16,475  20358  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:30:16,705  20384  Watching for file changes with StatReloader
+INFO 2023-12-13 08:30:45,123  20384  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:30:45,324  20403  Watching for file changes with StatReloader
+ERROR 2023-12-13 08:32:32,031  20403  Internal Server Error: /view_transactions/1
+Traceback (most recent call last):
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py", line 258, in view_saved_transaction
+    transaction = Saved_transactions.objects.get(pk=transaction_id)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gachara/PycharmProjects/djangoProject15/venv/lib/python3.8/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Alltechmanagement.models.Saved_transactions.DoesNotExist: Saved_transactions matching query does not exist.
+INFO 2023-12-13 08:33:17,907  20403  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-13 08:33:18,137  20480  Watching for file changes with StatReloader
+INFO 2023-12-14 02:57:49,614  5009  Watching for file changes with StatReloader
+WARNING 2023-12-14 02:57:57,164  5009  Not Found: /favicon.ico
+WARNING 2023-12-14 03:00:20,354  5009  Not Found: /favicon.ico
+WARNING 2023-12-14 03:00:29,669  5009  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /signin
+WARNING 2023-12-14 03:01:34,004  5009  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /signin
+INFO 2023-12-14 03:02:25,155  5009  /home/gachara/PycharmProjects/djangoProject15/djangoProject15/settings.py changed, reloading.
+INFO 2023-12-14 03:02:25,373  5660  Watching for file changes with StatReloader
+WARNING 2023-12-14 03:02:28,185  5660  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /signin
+INFO 2023-12-14 03:02:49,774  5660  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:02:50,031  5701  Watching for file changes with StatReloader
+WARNING 2023-12-14 03:02:52,296  5701  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /signin
+WARNING 2023-12-14 03:02:56,435  5701  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /signin
+WARNING 2023-12-14 03:03:10,467  5701  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /signin
+INFO 2023-12-14 03:03:22,616  5701  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:03:22,813  5723  Watching for file changes with StatReloader
+INFO 2023-12-14 03:03:39,209  5723  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:03:39,415  5736  Watching for file changes with StatReloader
+INFO 2023-12-14 03:09:45,023  5736  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:09:45,343  6349  Watching for file changes with StatReloader
+INFO 2023-12-14 03:13:20,567  6349  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/urls.py changed, reloading.
+INFO 2023-12-14 03:13:20,795  6440  Watching for file changes with StatReloader
+WARNING 2023-12-14 03:14:02,485  6440  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /sell/21
+INFO 2023-12-14 03:14:32,608  6440  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:14:32,812  6475  Watching for file changes with StatReloader
+WARNING 2023-12-14 03:14:46,491  6475  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /mpesa
+INFO 2023-12-14 03:15:01,377  6475  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:15:01,613  6500  Watching for file changes with StatReloader
+INFO 2023-12-14 03:15:05,955  6500  254712240197 1 174379
+DEBUG 2023-12-14 03:15:05,957  6500  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-14 03:15:07,267  6500  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-14 03:15:07,276  6500  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-14 03:15:08,191  6500  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-14 03:15:08,192  6500  {'MerchantRequestID': '17149-89743070-3', 'CheckoutRequestID': 'ws_CO_14122023061825368712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-14 03:15:08,192  6500  17149-89743070-3 ws_CO_14122023061825368712240197
+INFO 2023-12-14 03:15:59,511  6500  254712240197 1 174379
+DEBUG 2023-12-14 03:15:59,514  6500  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-14 03:16:00,206  6500  https://sandbox.safaricom.co.ke:443 "GET /oauth/v1/generate?grant_type=client_credentials HTTP/1.1" 200 None
+DEBUG 2023-12-14 03:16:00,212  6500  Starting new HTTPS connection (1): sandbox.safaricom.co.ke:443
+DEBUG 2023-12-14 03:16:01,128  6500  https://sandbox.safaricom.co.ke:443 "POST /mpesa/stkpush/v1/processrequest HTTP/1.1" 200 None
+DEBUG 2023-12-14 03:16:01,130  6500  {'MerchantRequestID': '118906-126961295-1', 'CheckoutRequestID': 'ws_CO_14122023061918209712240197', 'ResponseCode': '0', 'ResponseDescription': 'Success. Request accepted for processing', 'CustomerMessage': 'Success. Request accepted for processing'}
+INFO 2023-12-14 03:16:01,130  6500  118906-126961295-1 ws_CO_14122023061918209712240197
+WARNING 2023-12-14 03:18:34,631  6500  Forbidden (Origin checking failed - https://c8c1-102-214-156-51.ngrok-free.app does not match any trusted origins.): /addstock
+INFO 2023-12-14 03:19:30,612  6500  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:19:30,865  6616  Watching for file changes with StatReloader
+INFO 2023-12-14 03:46:00,673  6616  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
+INFO 2023-12-14 03:46:00,871  7785  Watching for file changes with StatReloader

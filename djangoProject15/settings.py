@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'j39342336i',
-        'HOST': 'localhost',  # Set to the appropriate host
+        'HOST': 'postgresql-rds-production-wordy-papaya-gvln.ca5z9zbxudjn.us-west-2.rds.amazonaws.com',  # Set to the appropriate host
         'PORT': '5432',       # Set to the appropriate port
     }
 }

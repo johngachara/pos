@@ -1033,3 +1033,4 @@ INFO 2023-12-14 03:19:30,612  6500  /home/gachara/PycharmProjects/djangoProject1
 INFO 2023-12-14 03:19:30,865  6616  Watching for file changes with StatReloader
 INFO 2023-12-14 03:46:00,673  6616  /home/gachara/PycharmProjects/djangoProject15/Alltechmanagement/views.py changed, reloading.
 INFO 2023-12-14 03:46:00,871  7785  Watching for file changes with StatReloader
+INFO 2023-12-14 04:12:15,930  7785  /home/gachara/PycharmProjects/djangoProject15/djangoProject15/settings.py changed, reloading.

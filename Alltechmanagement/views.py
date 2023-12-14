@@ -41,6 +41,7 @@ def signin(request):
                 form = signin_form()
     return render(request,'signin.html',{"form":form})
 @login_required
+@csrf_exempt
 def homepage(request):
     products = Shop_stock.objects.all()
     paginator = Paginator(products, 15)

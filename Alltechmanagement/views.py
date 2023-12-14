@@ -14,7 +14,7 @@ import json
 import requests
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
 
 from Alltechmanagement import mpesa
 from djangoProject15 import settings
@@ -24,7 +24,7 @@ from djangoProject15 import settings
 
 
 # Create your views here.
-@csrf_exempt
+@csrf_protect
 def signin(request):
     form = signin_form()
     if request.method== 'POST':
@@ -41,6 +41,7 @@ def signin(request):
                 form = signin_form()
     return render(request,'signin.html',{"form":form})
 @login_required
+@csrf_protect
 def homepage(request):
     products = Shop_stock.objects.all()
     paginator = Paginator(products, 15)

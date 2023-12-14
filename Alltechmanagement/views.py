@@ -9,7 +9,7 @@ from django.contrib import messages
 from Alltechmanagement.forms import signin_form, products_form, home_form, PaymentForm, CompleteForm
 from Alltechmanagement.models import Shop_stock, Home_stock, Saved_transactions, Completed_transactions
 import json
-import logging
+
 
 import requests
 from django.http import HttpResponse
@@ -19,7 +19,7 @@ from django.views.decorators.csrf import csrf_exempt
 from Alltechmanagement import mpesa
 from djangoProject15 import settings
 
-logger = logging.getLogger(__name__)
+
 
 
 
@@ -175,7 +175,6 @@ def initiate_payment(request):
         till_number = request.POST['till']
         phone = request.POST["phone"]
         amount = request.POST["amount"]
-        logger.info(f"{phone} {amount} {till_number}")
         timestamp = mpesa.get_current_timestamp()
         biz_short_code = till_number
         passkey = settings.MPESA_API["PASS_KEY"]
@@ -199,28 +198,23 @@ def initiate_payment(request):
 
         resp = requests.post(mpesa.get_payment_url(), json=data, headers=headers)
         messages.success(request,'Prompt Sent Successfully')
-        logger.debug(resp.json())
         json_resp = resp.json()
         if "ResponseCode" in json_resp:
             code = json_resp["ResponseCode"]
             if code == "0":
                 mid = json_resp["MerchantRequestID"]
                 cid = json_resp["CheckoutRequestID"]
-                logger.info(f"{mid} {cid}")
-            else:
-                logger.error(f"Error while initiating stk push {code}")
+
+
         elif "errorCode" in json_resp:
             errorCode = json_resp["errorCode"]
-            logger.error(f"Error with error code {errorCode}")
     return render(request, "payment.html")
 @login_required
 def callback(request):
     result = json.loads(request.body)
-    logger.info(result)
     mid = result["Body"]["stkCallback"]["MerchantRequestID"]
     cid = result["Body"]["stkCallback"]["CheckoutRequestID"]
     code = result["Body"]["stkCallback"]["ResultCode"]
-    logger.info(f"From Callback Result {mid} {cid} {code}")
     return HttpResponse({"message": "Successfully received"})
 @login_required
 def selling_page(request,product_id):

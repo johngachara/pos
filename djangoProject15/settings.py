@@ -143,31 +143,6 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert alert-danger alert-dismissible fade show',
 }
 LOGIN_URL = 'signin'
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '{levelname} {asctime}  {process:d}  {message}',
-            'style': '{',
-        },
-    },
-    'handlers': {
-        'newfile': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': './loggers.log',
-            'formatter': 'verbose'
-        },
-    },
-    'loggers': {
-        '': {
-            'level': 'DEBUG',
-            'handlers': ['newfile'],
-            'propagate': True,
-        },
-    },
-}
 MPESA_API = {
     "CALLBACK_URL": "https://1376-197-237-150-99.ngrok-free.app/callback",
     "CONSUMER_KEY": "76tpV9s60yFalNFHM8qLj2SohZfA4pSm",

@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'j39342336i',
-        'HOST': 'https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com/',  # Set to the appropriate host
+        'HOST': 'localhost',  # Set to the appropriate host
         'PORT': '5432',       # Set to the appropriate port
     }
 }

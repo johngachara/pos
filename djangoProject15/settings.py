@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'djangoProject15.urls'
-
+CSRF_TRUSTED_ORIGINS = ['https://*.mrl0zpicjd.execute-api.us-west-2.amazonaws.com','https://*.127.0.0.1']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

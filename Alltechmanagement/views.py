@@ -24,7 +24,7 @@ from djangoProject15 import settings
 
 
 # Create your views here.
-@csrf_protect
+@csrf_exempt
 def signin(request):
     form = signin_form()
     if request.method== 'POST':

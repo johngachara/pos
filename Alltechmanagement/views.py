@@ -41,7 +41,6 @@ def signin(request):
                 form = signin_form()
     return render(request,'signin.html',{"form":form})
 @login_required
-@csrf_protect
 def homepage(request):
     products = Shop_stock.objects.all()
     paginator = Paginator(products, 15)
@@ -50,7 +49,7 @@ def homepage(request):
     return render(request,'home.html',{"page_obj":page_obj})
 
 @login_required
-@csrf_exempt
+@csrf_protect
 def add_stock(request):
     form = products_form()
     if request.method == 'POST':
@@ -63,12 +62,10 @@ def add_stock(request):
             form = products_form()
     return render(request,'addstock.html',{"Form":form})
 @login_required
-@csrf_exempt
 def signout(request):
     logout(request)
     return redirect('signin')
 @login_required
-@csrf_exempt
 def home_stock(request):
     products = Home_stock.objects.all()
     paginator = Paginator(products, 15)
@@ -76,7 +73,7 @@ def home_stock(request):
     page_obj = paginator.get_page(page_number)
     return render(request,'homestock.html',{"page_obj":page_obj})
 @login_required
-@csrf_exempt
+@csrf_protect
 def add_home_stock(request):
     form = home_form()
     if request.method == 'POST':
@@ -89,13 +86,12 @@ def add_home_stock(request):
             form = home_form()
     return render(request, 'addhomestock.html', {"Form": form})
 @login_required
-@csrf_exempt
 def view_product(request,product_id):
     product = Shop_stock.objects.get(pk=product_id)
     return render(request,'product.html',{"Product":product})
 
 @login_required
-@csrf_exempt
+@csrf_protect
 def update_product(request,product_id):
     to_update = Shop_stock.objects.get(pk=product_id)
     form = products_form(instance=to_update)
@@ -108,7 +104,6 @@ def update_product(request,product_id):
             form = products_form(instance=to_update)
     return render(request,'update.html',{"Form":form})
 @login_required
-@csrf_exempt
 def delete_product(request,product_id):
     to_delete = Shop_stock.objects.get(pk=product_id)
     to_delete.delete()
@@ -116,7 +111,6 @@ def delete_product(request,product_id):
     return redirect('home')
 
 @login_required
-@csrf_exempt
 def search_product(request):
     search_parameter = request.GET.get('Searching')
     data = Shop_stock.objects.filter(Q(product_name__icontains=search_parameter))
@@ -125,7 +119,6 @@ def search_product(request):
     page_obj = paginator.get_page(page_number)
     return render(request,'home.html',{"page_obj":page_obj})
 @login_required
-@csrf_exempt
 def search_home_stock(request):
     search_parameter = request.GET.get('Home_stock_searching')
     data = Home_stock.objects.filter(Q(product_name__icontains=search_parameter))
@@ -134,12 +127,11 @@ def search_home_stock(request):
     page_obj = paginator.get_page(page_number)
     return render(request, 'homestock.html', {"page_obj": page_obj})
 @login_required
-@csrf_exempt
 def view_home_stock(request,product_id):
     product = Home_stock.objects.get(pk=product_id)
     return render(request,'homeproduct.html',{"Product":product})
 @login_required
-@csrf_exempt
+@csrf_protect
 def update_home_stock(request,product_id):
     toupdate = Home_stock.objects.get(pk=product_id)
     form = home_form(instance=toupdate)
@@ -153,7 +145,6 @@ def update_home_stock(request,product_id):
             form = home_form(instance=toupdate)
     return render(request,'updatehome.html',{"Form":form})
 @login_required
-@csrf_exempt
 def delete_home_stock(request,product_id):
     to_delete = Home_stock.objects.get(pk=product_id)
     to_delete.delete()
@@ -161,7 +152,6 @@ def delete_home_stock(request,product_id):
     return redirect('home_stock')
 
 @login_required
-@csrf_exempt
 def dispatch_page(request, product_id):
     try:
         product = Home_stock.objects.get(pk=product_id)
@@ -171,7 +161,6 @@ def dispatch_page(request, product_id):
         return redirect('homeproduct')
 
 @login_required
-@csrf_exempt
 def dispatch(request,product_id):
     product = Home_stock.objects.get(pk=product_id)
     quantity = request.GET.get('dispatch_quantity')
@@ -185,7 +174,7 @@ def dispatch(request,product_id):
 
 
 @login_required
-@csrf_exempt
+@csrf_protect
 def initiate_payment(request):
     if request.method == "POST":
         till_number = request.POST['till']
@@ -226,7 +215,6 @@ def initiate_payment(request):
             errorCode = json_resp["errorCode"]
     return render(request, "payment.html")
 @login_required
-@csrf_exempt
 def callback(request):
     result = json.loads(request.body)
     mid = result["Body"]["stkCallback"]["MerchantRequestID"]
@@ -234,7 +222,7 @@ def callback(request):
     code = result["Body"]["stkCallback"]["ResultCode"]
     return HttpResponse({"message": "Successfully received"})
 @login_required
-@csrf_exempt
+@csrf_protect
 def selling_page(request,product_id):
     product = Shop_stock.objects.get(pk=product_id)
     if request.method == 'POST':
@@ -258,7 +246,6 @@ def selling_page(request,product_id):
             return redirect('home')
     return render(request,'sell.html',{"Product":product})
 @login_required
-@csrf_exempt
 def saved_transactions(request):
     transactions = Saved_transactions.objects.all()
     paginator = Paginator(transactions, 15)
@@ -266,12 +253,10 @@ def saved_transactions(request):
     page_obj = paginator.get_page(page_number)
     return render(request,'transactions.html',{"page_obj":page_obj})
 @login_required
-@csrf_exempt
 def view_saved_transaction(request,transaction_id):
     transaction = Saved_transactions.objects.get(pk=transaction_id)
     return render(request,'viewtransactions.html',{"Product":transaction})
 @login_required
-@csrf_exempt
 def complete_transaction(request,transaction_id):
     transaction = Saved_transactions.objects.get(pk=transaction_id)
     transaction_name = transaction.product_name
@@ -281,7 +266,6 @@ def complete_transaction(request,transaction_id):
     transaction.delete()
     return redirect('home')
 @login_required
-@csrf_exempt
 def view_completed_transactions(request):
     transactions = Completed_transactions.objects.all()
     paginator = Paginator(transactions, 15)
@@ -289,7 +273,6 @@ def view_completed_transactions(request):
     page_obj = paginator.get_page(page_number)
     return render(request, 'completed.html', {"page_obj": page_obj})
 @login_required
-@csrf_exempt
 def delete_saved_transactions(request,transaction_id):
     transaction = Saved_transactions.objects.get(pk=transaction_id)
     transaction.delete()

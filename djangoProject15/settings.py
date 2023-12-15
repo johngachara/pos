@@ -144,7 +144,7 @@ MESSAGE_TAGS = {
 }
 LOGIN_URL = 'signin'
 MPESA_API = {
-    "CALLBACK_URL": "https://1376-197-237-150-99.ngrok-free.app/callback",
+    "CALLBACK_URL": "https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com//callback",
     "CONSUMER_KEY": "76tpV9s60yFalNFHM8qLj2SohZfA4pSm",
     "CONSUMER_SECRET": "27joa4G4j7EiJ6K8",
     "CREDENTIALS_URL": "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials",

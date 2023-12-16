@@ -30,7 +30,7 @@ DEBUG = False
 # Make sure these are set appropriately
 CSRF_COOKIE_SECURE = True  # Set to False if not using HTTPS during development
 CSRF_USE_SESSIONS = False  # Set to True if you prefer using sessions for CSRF tokens
-ALLOWED_HOSTS = ['127.0.0.1',"mrl0zpicjd.execute-api.us-west-2.amazonaws.com"]
+ALLOWED_HOSTS = ['127.0.0.1',"https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com"]
 
 
 # Application definition

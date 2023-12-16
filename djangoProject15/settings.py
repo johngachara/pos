@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4wau9k9hqookos9*qzx5fuee!f64#8f$4c!nqopb7!o@4_qhp$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1',"mrl0zpicjd.execute-api.us-west-2.amazonaws.com"]
+ALLOWED_HOSTS = ['127.0.0.1',"https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com",'localhost']
 
 
 # Application definition
@@ -55,6 +55,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'djangoProject15.urls'
 CSRF_TRUSTED_ORIGINS = ['https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com']
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = True
+CSRF_USE_SESSIONS = True
+
+
 
 TEMPLATES = [
     {
@@ -127,7 +132,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -145,7 +149,7 @@ MESSAGE_TAGS = {
 }
 LOGIN_URL = 'signin'
 MPESA_API = {
-    "CALLBACK_URL": "https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com//callback",
+    "CALLBACK_URL": "https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com/callback",
     "CONSUMER_KEY": "76tpV9s60yFalNFHM8qLj2SohZfA4pSm",
     "CONSUMER_SECRET": "27joa4G4j7EiJ6K8",
     "CREDENTIALS_URL": "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials",

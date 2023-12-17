@@ -54,10 +54,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'djangoProject15.urls'
-CSRF_TRUSTED_ORIGINS = ['https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com']
-CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://mrl0zpicjd.execute-api.us-west-2.amazonaws.com','127.0.0.1']
 CSRF_COOKIE_HTTPONLY = True
 CSRF_USE_SESSIONS = True
+SESSION_COOKIE_SECURE = True SESSION_COOKIE_SAMESITE = None
+ CSRF_COOKIE_SECURE = True CSRF_COOKIE_SAMESITE = 'Strict'
+ 
 
 
 TEMPLATES = [

@@ -24,7 +24,6 @@ from djangoProject15 import settings
 
 
 # Create your views here.
-@csrf_exempt
 def signin(request):
     form = signin_form()
     if request.method== 'POST':
@@ -49,7 +48,6 @@ def homepage(request):
     return render(request,'home.html',{"page_obj":page_obj})
 
 @login_required
-@csrf_protect
 def add_stock(request):
     form = products_form()
     if request.method == 'POST':
@@ -73,7 +71,6 @@ def home_stock(request):
     page_obj = paginator.get_page(page_number)
     return render(request,'homestock.html',{"page_obj":page_obj})
 @login_required
-@csrf_protect
 def add_home_stock(request):
     form = home_form()
     if request.method == 'POST':
